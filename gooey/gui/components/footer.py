@@ -97,7 +97,7 @@ class Footer(wx.Panel):
         self.start_button = self.button(_('start'), wx.ID_OK, event_id=int(events.WINDOW_START))
         self.close_button = self.button(_("close"), wx.ID_OK, event_id=int(events.WINDOW_CLOSE))
         self.restart_button = self.button(_('restart'), wx.ID_OK, event_id=int(events.WINDOW_RESTART))
-        self.edit_button = self.button(_('edit'), wx.ID_OK, event_id=int(events.WINDOW_EDIT))
+        self.edit_button = self.button(_('done'), wx.ID_OK, event_id=int(events.WINDOW_EDIT))
 
         self.progress_bar = wx.Gauge(self, range=100)
 
