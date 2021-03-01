@@ -13,6 +13,7 @@
   "close": "Close",
   "close_program": "Close program?",
   "edit": "Edit",
+  "done": "Done",
   "enter_filename": "Enter Filename",
   "error_required_fields": "Must fill in all fields in the Required section!",
   "error_title": "Error",
