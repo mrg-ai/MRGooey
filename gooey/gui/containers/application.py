@@ -275,7 +275,7 @@ class GooeyApplication(wx.Frame):
         self.console.Show(True)
         buttons = (['edit_button', 'restart_button', 'close_button']
                    if self.buildSpec.get('show_restart_button', True)
-                   else ['edit_button', 'close_button'])
+                   else ['edit_button'])
         self.footer.showButtons(*buttons)
         self.footer.progress_bar.Show(False)
         if self.buildSpec.get('timing_options')['show_time_remaining']:
