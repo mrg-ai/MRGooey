@@ -92,9 +92,10 @@ class Footer(wx.Panel):
 
 
     def _init_components(self):
+        self.start_button = self.button(_('start'), wx.ID_OK, event_id=int(events.WINDOW_START))
         self.cancel_button = self.button(_('cancel'), wx.ID_CANCEL, event_id=events.WINDOW_CANCEL)
         self.stop_button = self.button(_('stop'), wx.ID_OK, event_id=events.WINDOW_STOP)
-        self.start_button = self.button(_('start'), wx.ID_OK, event_id=int(events.WINDOW_START))
+
         self.close_button = self.button(_("close"), wx.ID_OK, event_id=int(events.WINDOW_CLOSE))
         self.restart_button = self.button(_('restart'), wx.ID_OK, event_id=int(events.WINDOW_RESTART))
         self.edit_button = self.button(_('done'), wx.ID_OK, event_id=int(events.WINDOW_EDIT))
@@ -125,8 +126,9 @@ class Footer(wx.Panel):
         h_sizer.Add(self.time_remaining_text,0,wx.LEFT | wx.ALIGN_CENTER_VERTICAL, 20)
 
         h_sizer.AddStretchSpacer(1)
-        h_sizer.Add(self.cancel_button, 0,wx.RIGHT, 20)
         h_sizer.Add(self.start_button, 0, wx.RIGHT, 20)
+        h_sizer.Add(self.cancel_button, 0,wx.RIGHT, 20)
+
         h_sizer.Add(self.stop_button, 0, wx.RIGHT, 20)
 
         v_sizer.AddStretchSpacer(1)
